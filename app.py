@@ -31,25 +31,13 @@ def main() :
         selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
 
         if selected_item == "Mediapipe":
-              	st.write("A!")
+	    st.write("A!")
         elif selected_item == "OpenCV":
-              	st.write("B!!")
+            st.write("B!!")
         elif selected_item == "Face Recognition":
-              	st.write("C!!!")
+            st.write("C!!!")
         else:
-#               	col1, col2, col3 = st.columns(3)
-
-# 		with col1:
-# 			st.header("Yolov3")
-   			st.image("data/yolov3.png")
-
-# 		with col2:
-#    			st.header("Yolov5")
-   			st.image("data/yolov5.png")
-
-# 		with col3:
-#    			st.header("Yolov7")
-   			st.image("data/yolov7.png")
+	    st.write("D!!!!")
 
     with tab3:
 	st.write("무엇을 넣을까요")
