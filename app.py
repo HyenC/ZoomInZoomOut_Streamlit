@@ -14,7 +14,7 @@ with st.sidebar:
 
 # 녹화본 파일 띄우기
 def main():
-    video_file = open("data/녹화_2023_01_03_14_06_34_960.mp4", "rb")
+    video_file = open("data/final.mp4", "rb")
     st.video(video_file)
 
 if __name__ == "__main__":
