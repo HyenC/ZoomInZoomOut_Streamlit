@@ -28,16 +28,25 @@ def main() :
         st.image("data/topic.png")
 
     with tab2:
-        selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
+	selected_item = st.radio("Radio Part", ("A", "B", "C"))
+	
+  	if selected_item == "A":
+	    st.write("A!!")
+  	elif selected_item == "B":
+      	    st.write("B!")
+  	elif selected_item == "C":
+	    st.write("C!")
 
-        if selected_item == "Mediapipe":
-	    st.write("A!")
-        elif selected_item == "OpenCV":
-            st.write("B!!")
-        elif selected_item == "Face Recognition":
-            st.write("C!!!")
-        else:
-	    st.write("D!!!!")
+#           selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
+
+#           if selected_item == "Mediapipe":
+# 	        st.write("A!")
+#           elif selected_item == "OpenCV":
+#             	st.write("B!!")
+#           elif selected_item == "Face Recognition":
+#             	st.write("C!!!")
+#           else:
+# 	    	st.write("D!!!!")
 
     with tab3:
 	st.write("무엇을 넣을까요")
