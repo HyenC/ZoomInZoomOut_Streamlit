@@ -28,7 +28,7 @@ def main() :
         st.image("data/topic.png")
 
     with tab2:
-        selected_item = st.radio(("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
+        selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
 
         if selected_item == "Mediapipe":
               st.write("A!!")
