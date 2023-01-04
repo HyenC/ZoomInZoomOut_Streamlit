@@ -14,12 +14,12 @@ with st.sidebar:
     st.markdown("#### 실시간 웹캠 자리비움 탐지 보고서")
 
    
+def main() :
+    
+    img = Image.open('data/logo.png')
+    st.image(img)
 
-
-
-def load_image(image_file):
-    img = Image.open(image_file)
-    return img
-
-load_image("data/logo.png")
-st.image("data/logo.png")
+    
+    
+if __name__ == "__main__" :
+    main()
