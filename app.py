@@ -28,14 +28,14 @@ def main() :
         st.image("data/topic.png")
 
     with tab2:
-	selected_item = st.radio("Radio Part", ("A", "B", "C"))
+        selected_item = st.radio("Radio Part", ("A", "B", "C"))
 	
-  	if selected_item == "A":
-	    st.write("A!!")
-  	elif selected_item == "B":
-      	    st.write("B!")
-  	elif selected_item == "C":
-	    st.write("C!")
+        if selected_item == "A":
+            st.write("A!!")
+        elif selected_item == "B":
+            st.write("B!")
+        elif selected_item == "C":
+            st.write("C!")
 
 #           selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
 
@@ -49,7 +49,7 @@ def main() :
 # 	    	st.write("D!!!!")
 
     with tab3:
-	st.write("무엇을 넣을까요")
+        st.write("무엇을 넣을까요")
     
     
 if __name__ == "__main__" :
