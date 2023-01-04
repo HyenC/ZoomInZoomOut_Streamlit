@@ -65,7 +65,6 @@ def main() :
                 st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
 
             st.image("data/yolov7.png")
-            st.caption("사진3️⃣ : YOLOv5, 7 비교")
             
             st.subheader("📝 결론")
             st.write(f"""
