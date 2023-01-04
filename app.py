@@ -41,15 +41,15 @@ def main() :
 
             with col1:
                 st.subheader("yolo3")
-#                 st.image("https://static.streamlit.io/examples/cat.jpg")
+                st.image("data/yolov3.png")
 
             with col2:
                 st.subheader("yolo3")
-#                 st.image("https://static.streamlit.io/examples/dog.jpg")
+                st.image("data/yolov5.png")
 
             with col3:
                 st.subheader("yolo3")
-#                 st.image("https://static.streamlit.io/examples/owl.jpg")
+                st.image("data/yolov7.png")
 
     with tab3:
         st.write("무엇을 넣을까요")
