@@ -31,17 +31,19 @@ def main() :
         selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
 
         if selected_item == "Mediapipe":
-              st.write("A!!")
+              st.write("A!")
         elif selected_item == "OpenCV":
-              st.write("B!")
+              st.write("B!!")
         elif selected_item == "Face Recognition":
-              st.write("C!")
+              st.write("C!!!")
         else:
-              st.write("D!")
+              st.write("D!!!!")
 
     with tab3:
-        st.header("An owl")
-#         st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
+        video_file = open('final.mp4', 'rb')
+        video_bytes = video_file.read()
+	
+        st.video(video_bytes)
     
     
 if __name__ == "__main__" :
