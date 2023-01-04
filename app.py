@@ -28,8 +28,16 @@ def main() :
         st.image("data/topic.png")
 
     with tab2:
-        st.header("A dog")
-#         st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
+        selected_item = st.radio("Choose model", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=False)
+
+        if selected_item == "Mediapipe":
+              st.write("A!!")
+        elif selected_item == "OpenCV":
+              st.write("B!")
+        elif selected_item == "Face Recognition":
+              st.write("C!")
+        else:
+              st.write("D!")
 
     with tab3:
         st.header("An owl")
