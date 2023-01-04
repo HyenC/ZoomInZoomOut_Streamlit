@@ -40,7 +40,7 @@ def main() :
               st.write("D!!!!")
 
     with tab3:
-        video_file = open('final.mp4', 'rb')
+        video_file = open("data/final.mp4", "rb")
         video_bytes = video_file.read()
 	
         st.video(video_bytes)
