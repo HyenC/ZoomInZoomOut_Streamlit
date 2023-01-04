@@ -57,22 +57,22 @@ def main() :
             col1, col2 = st.columns(2)
 
             with col1:
-                st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
                 st.image("data/yolov3.png")
+                st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
 
             with col2:
-                st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
                 st.image("data/yolov5.png")
+                st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
 
-            st.caption("사진3️⃣ : YOLOv5, 7 비교")
             st.image("data/yolov7.png")
-            st.write(
-                f"""
-                    사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)
-                    사진2️⃣ : 4, 5를 따로 비교한 자료
-                    사진3️⃣ : YOLOv5, 7 비교
-                """
-            )
+            st.caption("사진3️⃣ : YOLOv5, 7 비교")
+            
+            st.subheader("📝 결론")
+            st.write(f"""
+                - YOLOv4는 v5에 비해 느리게 동작하지만 FPS성능의 최적화 가능
+                - YOLOv5는 v4에 비해 더 쉽게 환경을 구성하고, 구현 가능
+                - YOLOv7은 real-time object detection 분야에서 SOTA로 인정받고 있으며, 그 전 모델들보다 훨씬 더 좋은 성능과 속도를 가짐
+            """)
 
     with tab3:
         st.write("무엇을 넣을까요")
