@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(
     page_title="줌인줌아웃",
     page_icon="📸",
-    layout="centered"
+    layout="wide"
 )
 
 # sidebar
