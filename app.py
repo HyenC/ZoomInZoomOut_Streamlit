@@ -14,10 +14,12 @@ with st.sidebar:
     st.markdown("#### 실시간 웹캠 자리비움 탐지 보고서")
 
    
-img1 = Image.open('data/logo.png')
-st.image(img1)
+# img1 = Image.open('data/logo.png')
+# st.image(img1)
 
 def main() :
+    img1 = Image.open('data/logo.png')
+    st.image(img1)
     
     tab1, tab2, tab3 = st.tabs(["Topic", "Model", "Demonstration"])
     with tab1:
