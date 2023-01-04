@@ -72,25 +72,25 @@ def main() :
             """)
 
     with tab3:
-        with st.container():
-            st.write("This is inside the container")
-            st.image("data/o1.png")
-        with st.container():
-            col3, col4, col5 = st.columns(3)
-                with col3:
-                    st.image("data/o2.png")
-                with col4:
-                    st.image("data/o3.png")
-                with col5:
-                    st.image("data/o4.png")
-        with st.container():
-            st.image("data/o5.png")
-        with st.container():
-            col6, col7 = st.columns(2)
-                with col6:
-                    st.image("data/o6.png")
-                with col7:
-                    st.image("data/o7.png")
+        st.write("This is inside the container")
+        
+        col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.image("data/o1.png")
+            with col2:
+                st.image("data/o2.png")
+            with col3:
+                st.image("data/o3.png")
+            with col4:
+                st.image("data/o4.png")
+        
+        col5, col6, col7 = st.columns(3)
+            with col5:
+                st.image("data/o5.png")
+            with col6:
+                st.image("data/o6.png")
+            with col7:
+                st.image("data/o7.png")
     
     
 if __name__ == "__main__" :
