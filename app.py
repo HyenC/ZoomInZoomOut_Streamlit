@@ -55,11 +55,9 @@ def main() :
              """)
         else:
             col1, col2 = st.columns(2)
-
             with col1:
                 st.image("data/yolov3.png")
                 st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
-
             with col2:
                 st.image("data/yolov5.png")
                 st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
@@ -74,7 +72,23 @@ def main() :
             """)
 
     with tab3:
-        st.write("무엇을 넣을까요")
+        st.image("data/o1.png")
+        
+        col1, col2, col3 = st.columns(3)
+            with col1:
+                st.image("data/o2.png")
+            with col2:
+                st.image("data/o3.png")
+            with col3:
+                st.image("data/o4.png")
+        
+        st.image("data/o5.png")
+        
+        col4, col5 = st.columns(2)
+            with col4:
+                st.image("data/o6.png")
+            with col5:
+                st.image("data/o7.png")
     
     
 if __name__ == "__main__" :
