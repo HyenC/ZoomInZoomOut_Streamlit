@@ -4,7 +4,7 @@ import pandas as pd
 st.set_page_config(
     page_title="줌인줌아웃",
     page_icon="📸",
-    layout="wide"
+    layout="centered"
 )
 
 # sidebar
@@ -15,13 +15,7 @@ with st.sidebar:
 # 녹화본 파일 띄우기
 def main():
     video_file = open("data/final.mp4", "rb")
-    st.video(video_file)
-
-width = max(width, 0.01)
-side = max((100 - width) / 2, 0.01)
-
-_, container, _ = st.columns([side, width, side])
-container.video(data=video_file)    
+    st.video(video_file)  
 
 if __name__ == "__main__":
     main()
