@@ -31,16 +31,12 @@ def main() :
         selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
 
         if selected_item == "Mediapipe":
-		st.subheader("Mediapipe")
               	st.write("A!")
         elif selected_item == "OpenCV":
-		st.subheader("OpenCV")
               	st.write("B!!")
         elif selected_item == "Face Recognition":
-		st.subheader("Face Recognition")
               	st.write("C!!!")
         else:
-		st.subheader("Yolo")
 #               	col1, col2, col3 = st.columns(3)
 
 # 		with col1:
