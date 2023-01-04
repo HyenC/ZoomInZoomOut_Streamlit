@@ -17,6 +17,6 @@ def load_image(image_file):
     img = Image.open(image_file)
     return img
 
-load_image("logo.png")
+load_image("data/logo.png")
 
-st.image("logo.png")
+st.image("data/logo.png")
