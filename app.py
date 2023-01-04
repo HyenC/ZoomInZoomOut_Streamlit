@@ -45,15 +45,15 @@ def main() :
 
 # 		with col1:
 # 			st.header("Yolov3")
-   			st.image("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/3eb0dd96-562d-4937-a766-b1789baa301e/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230104T184234Z&X-Amz-Expires=86400&X-Amz-Signature=8c93dae77a6959f98243e67ede33b2d907708e190116f3a1d8e9a191b761d688&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject")
+   			st.image("data/yolov3.png")
 
 # 		with col2:
 #    			st.header("Yolov5")
-   			st.image("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e5412de4-0d2d-4eb1-94da-d538c99dd641/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230104T184317Z&X-Amz-Expires=86400&X-Amz-Signature=f11e4e6cde071c027320b2fa59f7d079065efc5200c8c313c8cf39fa95139c46&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject")
+   			st.image("data/yolov5.png")
 
 # 		with col3:
 #    			st.header("Yolov7")
-   			st.image("https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6c530d4-d901-4d0f-9089-74cb2eed2294/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230104%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230104T184341Z&X-Amz-Expires=86400&X-Amz-Signature=53ba0c07f9486669f4aff96ed0368da2d4ba08ee99b402474789469bb371770e&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject")
+   			st.image("data/yolov7.png")
 
     with tab3:
 	st.write("무엇을 넣을까요")
