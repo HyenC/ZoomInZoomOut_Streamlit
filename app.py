@@ -32,35 +32,47 @@ def main() :
 
         if selected_item == "Mediapipe":
             st.header("Mediapipe")
-            st.write(
-                f"""
-                    - 구글에서 주로 인체를 대상으로 하는 비전인식기능들을 AI모델 개발과 기계 학습까지 마친 상태로 제공하는 서비스
-                    - 다양한 프로그램 언어에서 사용하기 편하게 라이브러리 형태로 모듈화되어 제공되며 사용 방법 또한 풍부하게 제공되기 때문에 몇 가지 간단한 단계로 Mediapipe에서 제공하는 AI기능을 활용한 응용 프로그램 개발이 가능
-                """
-            )
+            st.write(f"""
+                - 구글에서 주로 인체를 대상으로 하는 비전인식기능들을 AI모델 개발과 기계 학습까지 마친 상태로 제공하는 서비스
+                - 다양한 프로그램 언어에서 사용하기 편하게 라이브러리 형태로 모듈화되어 제공되며 사용 방법 또한 풍부하게 제공되기 때문에 몇 가지 간단한 단계로 Mediapipe에서 제공하는 AI기능을 활용한 응용 프로그램 개발이 가능
+            """)
             st.header("MediaPipe의 Face Detection")
-            st.write(
-                f"""
-                    - 6개의 랜드마크(오른쪽 눈, 왼쪽 눈, 코 끝, 입 중심, 오른쪽 귀 윗 가장자리 위의 점 및 왼쪽 귀 윗 가장자리 위의 점) 및 다중 얼굴 지원과 함께 제공되는 초고속 얼굴 감지 솔루션
-                """
-            )
+            st.write(f"""
+                - 6개의 랜드마크(오른쪽 눈, 왼쪽 눈, 코 끝, 입 중심, 오른쪽 귀 윗 가장자리 위의 점 및 왼쪽 귀 윗 가장자리 위의 점) 및 다중 얼굴 지원과 함께 제공되는 초고속 얼굴 감지 솔루션
+            """)
         elif selected_item == "OpenCV":
-            st.write("B!!")
+            st.header("OpenCV")
+            st.write(f"""
+                - Open Source Computer Vision의 약자로, 영상 처리에 사용할 수 있는 오픈 소스 라이브러리
+                - 컴퓨터가 사람의 눈처럼 인식할 수 있게 처리해주는 역할을 하기도 하며, 카메라 어플에서도 OpenCV가 사용됨
+                - 추가로 사용되는 예시 : 공장에서 제품 검사, 의료 영상 처리 및 보정 그리고 판단, CCTV영상, 로보틱스
+             """)
         elif selected_item == "Face Recognition":
-            st.write("C!!!")
+            st.header("Face Recognition")
+            st.write(f"""
+                - 해당 라이브러리는 딥러닝 기반으로 제작된 [dlib](http://dlib.net/)의 얼굴 인식 기능을 사용하여 구축
+                - 이 모델은 [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) 기반으로 99.38%의 정확도를 가짐([https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition))
+             """)
         else:
             col1, col2 = st.columns(2)
 
             with col1:
-                st.subheader("yolo3")
+                st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
                 st.image("data/yolov3.png")
 
             with col2:
-                st.subheader("yolo3")
+                st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
                 st.image("data/yolov5.png")
 
-            st.subheader("yolo3")
+            st.caption("사진3️⃣ : YOLOv5, 7 비교")
             st.image("data/yolov7.png")
+            st.write(
+                f"""
+                    사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)
+                    사진2️⃣ : 4, 5를 따로 비교한 자료
+                    사진3️⃣ : YOLOv5, 7 비교
+                """
+            )
 
     with tab3:
         st.write("무엇을 넣을까요")
