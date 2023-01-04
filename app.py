@@ -17,5 +17,15 @@ def main():
     video_file = open("data/final.mp4", "rb")
     st.video(video_file)
 
+width = st.sidebar.slider(
+    label="Width", min_value=0, max_value=100, value=DEFAULT_WIDTH, format="%d%%"
+)
+
+width = max(width, 0.01)
+side = max((100 - width) / 2, 0.01)
+
+_, container, _ = st.columns([side, width, side])
+container.video(data=video_file)    
+
 if __name__ == "__main__":
     main()
