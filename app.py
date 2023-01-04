@@ -18,7 +18,8 @@ def main() :
     
     img = Image.open('data/logo.png')
     st.image(img)
-
+    
+    st.tabs(["Topic", "Model", "Demonstration"])
     
     
 if __name__ == "__main__" :
