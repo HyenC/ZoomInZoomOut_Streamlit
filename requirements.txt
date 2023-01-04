@@ -7,3 +7,4 @@ seaborn
 matplotlib
 koreanize_matplotlib
 protobuf~=3.19.0
+pip
