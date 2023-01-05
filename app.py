@@ -57,6 +57,7 @@ def main() :
              """)
         else:
             st.header("What is the best YOLO?")
+            st.image("data/yolo.png")
             col1, col2 = st.columns(2)
             with col1:
                 st.image("data/yolov3.png", width=420, caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
