@@ -32,6 +32,7 @@ def main() :
 
         if selected_item == "Mediapipe":
             st.header("Mediapipe")
+            st.image("data/mediapipe.png")
             st.write(f"""
                 - 구글에서 주로 인체를 대상으로 하는 비전인식기능들을 AI모델 개발과 기계 학습까지 마친 상태로 제공하는 서비스
                 - 다양한 프로그램 언어에서 사용하기 편하게 라이브러리 형태로 모듈화되어 제공되며 사용 방법 또한 풍부하게 제공되기 때문에 몇 가지 간단한 단계로 Mediapipe에서 제공하는 AI기능을 활용한 응용 프로그램 개발이 가능
@@ -42,6 +43,7 @@ def main() :
             """)
         elif selected_item == "OpenCV":
             st.header("OpenCV")
+            st.image("data/opencv.png")
             st.write(f"""
                 - Open Source Computer Vision의 약자로, 영상 처리에 사용할 수 있는 오픈 소스 라이브러리
                 - 컴퓨터가 사람의 눈처럼 인식할 수 있게 처리해주는 역할을 하기도 하며, 카메라 어플에서도 OpenCV가 사용됨
