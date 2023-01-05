@@ -72,11 +72,20 @@ def main() :
             """)
 
     with tab3:
-        st.write("This is inside the container")
-        fst = st.checkbox('1️⃣st')
-        snd = st.checkbox('2️⃣nd')
-        trd = st.checkbox('3️⃣rd')
-        fth = st.checkbox('4️⃣th')
+        c1, c2, c3, c4 = st.columns(4)
+        with c1:
+            fst = st.checkbox('1️⃣st')
+        with c2:
+            snd = st.checkbox('2️⃣nd')
+        with c3:
+            trd = st.checkbox('3️⃣rd')
+        with c4:
+            fth = st.checkbox('4️⃣th')
+            
+#         fst = st.checkbox('1️⃣st')
+#         snd = st.checkbox('2️⃣nd')
+#         trd = st.checkbox('3️⃣rd')
+#         fth = st.checkbox('4️⃣th')
 
         if fst:
             st.image("data/o1.png")
