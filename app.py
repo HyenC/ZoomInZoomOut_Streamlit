@@ -28,7 +28,7 @@ def main() :
         st.image("data/topic.png")
 
     with tab2:
-        selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True)
+        selected_item = st.radio("", ("Mediapipe", "OpenCV", "Face Recognition", "Yolo"), horizontal=True, label_visibility="collapsed")
 
         if selected_item == "Mediapipe":
             st.header("Mediapipe")
@@ -80,7 +80,7 @@ def main() :
     with tab3:
         c1, c2 = st.columns([0.1, 1.0])
         with c1:
-            selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"))
+            selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"), )
 #             fst = st.checkbox('1️⃣st')
 #             snd = st.checkbox('2️⃣nd')
 #             trd = st.checkbox('3️⃣rd')
