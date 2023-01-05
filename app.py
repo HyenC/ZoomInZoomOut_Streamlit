@@ -72,31 +72,37 @@ def main() :
             """)
 
     with tab3:
-        c1, c2, c3, c4 = st.columns(4)
+        c1, c2 = st.columns([0.3, 1.0])
         with c1:
             fst = st.checkbox('1️⃣st')
-        with c2:
             snd = st.checkbox('2️⃣nd')
-        with c3:
             trd = st.checkbox('3️⃣rd')
-        with c4:
             fth = st.checkbox('4️⃣th')
+        with c2:
+            if fst:
+                st.image("data/o1.png")
+            if snd:
+                st.image("data/o25.png")
+            if trd:
+                st.image("data/o3.png")
+            if fth:
+                st.image("data/o45.png")
             
 #         fst = st.checkbox('1️⃣st')
 #         snd = st.checkbox('2️⃣nd')
 #         trd = st.checkbox('3️⃣rd')
-#         fth = st.checkbox('4️⃣th')
+# #         fth = st.checkbox('4️⃣th')
 
-        if fst:
-            st.image("data/o1.png")
-        if snd:
-            st.image("data/o2.png")
-            st.image("data/o3.png")
-            st.image("data/o4.png")
-        if trd:
-            st.image("data/o5.png")
-        if fth:
-            st.image("data/o1.png")
+#         if fst:
+#             st.image("data/o1.png")
+#         if snd:
+#             st.image("data/o2.png")
+#             st.image("data/o3.png")
+#             st.image("data/o4.png")
+#         if trd:
+#             st.image("data/o5.png")
+#         if fth:
+#             st.image("data/o1.png")
     
     
 if __name__ == "__main__" :
