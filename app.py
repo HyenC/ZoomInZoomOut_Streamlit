@@ -104,7 +104,7 @@ def main() :
             st.subheader("📹 자리 복귀")
             a3, b3 = st.columns(2)
             with a3:
-                st.image("data/o5.png", width=420)
+                st.image("data/o5.png", width=400)
             with b3:
                 st.write("")
                 st.write("")
@@ -114,7 +114,7 @@ def main() :
                 
         if selected_item == "4️⃣th":
             st.subheader("📹 화면 재이탈")
-            st.image("data/o67.png", width=850)
+            st.image("data/o67.png", width=820)
             st.write("- 다시 화면 상에서 사라지면, 그 기준으로 다시 자리 비움 여부를 체크")
     
     
