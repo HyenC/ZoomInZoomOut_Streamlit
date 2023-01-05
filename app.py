@@ -53,6 +53,11 @@ def main() :
             st.header("Face Recognition")
             st.write(f"""
                 - 해당 라이브러리는 딥러닝 기반으로 제작된 [dlib](http://dlib.net/)의 얼굴 인식 기능을 사용하여 구축
+                - 핵심은 DB에 보유한 Class의 대표 이미지와 입력된 Input 이미지간의 distance를 구하고 이 distance를 가지고 어떤 사람인지를 판단
+                - 일반적인 전처리 과정
+                  1) face detection, 얼굴 검출: 시스템에 입력된 이미지에서 얼굴 영역을 찾음(face detection, 얼굴 검출)
+                  2) face alignment, 얼굴 정렬: 눈과 코 등 얼굴의 특징을 나타내는 점을 찾음
+                  3) 이 특징점을 이용해 얼굴 영역을 동일한 형태와 크기로 변경
                 - 이 모델은 [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) 기반으로 99.38%의 정확도를 가짐([https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition))
              """)
         else:
