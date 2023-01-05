@@ -77,48 +77,37 @@ def main() :
             """)
 
     with tab3:
-        selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"), )
+        selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"), horizontal=True)
         if selected_item == "1️⃣st":
-            a1, b1, c1 = st.columns([0.5, 0.5, 0.2])
+            a1, b1 = st.columns(2)
             with a1:
                 st.image("data/o1.png", width=420)
             with b1:
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
-            with c1:
-                st.write("")
                 
         if selected_item == "2️⃣nd":
-            a2, b2, c2 = st.columns([0.1, 0.1, 0.1])
-            with a1:
-                st.write("")
-            with b1:
-                st.image("data/o24.png", width=420)
-                st.write(f"""
-                     📹 인물이 웹캠 화면을 이탈
-                     - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
-                     - 해당 횟수는 사용자가 지정 가능
-                     - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
-                     - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
-
-                """)
-            with c1:
-                st.write("")
+            st.image("data/o24.png", width=420)
+            st.write(f"""
+                📹 인물이 웹캠 화면을 이탈
+                - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
+                - 해당 횟수는 사용자가 지정 가능
+                - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
+                - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
+            """)
                 
         if selected_item == "3️⃣rd":
-            a3, b3, c3 = st.columns([0.4, 0.3, 0.5])
-            with a1:
+            a3, b3 = st.columns(2)
+            with a3:
                 st.image("data/o5.png", width=420)
-            with b1:
+            with b3:
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
-            with c1:
-                st.write("")
                 
         if selected_item == "4️⃣th":
-            a4, b4, c4 = st.columns([1.0, 0.1, 0.1])
+            a4, b4, c4 = st.columns([0.1, 0.1, 0.1])
             with a1:
-                st.image("data/o67.png", width=420)
+                st.write("")
             with b1:
-                st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
+                st.image("data/o67.png", width=420)
             with c1:
                 st.write("")
 
