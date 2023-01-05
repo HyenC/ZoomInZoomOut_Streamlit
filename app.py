@@ -44,6 +44,8 @@ def main() :
         elif selected_item == "OpenCV":
             st.header("OpenCV")
             st.image("data/opencv.png")
+            st.image("data/s_opencv.png")
+            st.image("data/opencv_s.png")
             st.write(f"""
                 - Open Source Computer Vision의 약자로, 영상 처리에 사용할 수 있는 오픈 소스 라이브러리
                 - 컴퓨터가 사람의 눈처럼 인식할 수 있게 처리해주는 역할을 하기도 하며, 카메라 어플에서도 OpenCV가 사용됨
