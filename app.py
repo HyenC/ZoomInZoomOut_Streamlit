@@ -54,13 +54,12 @@ def main() :
                 - 이 모델은 [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/) 기반으로 99.38%의 정확도를 가짐([https://github.com/ageitgey/face_recognition](https://github.com/ageitgey/face_recognition))
              """)
         else:
+            st.header("What is the best YOLO?")
             col1, col2 = st.columns(2)
             with col1:
                 st.image("data/yolov3.png", caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
-#                 st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
             with col2:
                 st.image("data/yolov5.png", caption="사진2️⃣ : 4, 5를 따로 비교한 자료")
-#                 st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
             
             e1, e2, e3 = st.columns([0.3, 1.0, 0.3])
             with e1:
@@ -78,33 +77,70 @@ def main() :
             """)
 
     with tab3:
-        c1, c2 = st.columns([0.1, 1.0])
-        with c1:
-            selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"), )
-#             fst = st.checkbox('1️⃣st')
-#             snd = st.checkbox('2️⃣nd')
-#             trd = st.checkbox('3️⃣rd')
-#             fth = st.checkbox('4️⃣th')
-        with c2:
-            if selected_item == "1️⃣st":
+        selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"), )
+        if selected_item == "1️⃣st":
+            a1, b1, c1 = st.columns([0.5, 0.5, 0.2])
+            with a1:
                 st.image("data/o1.png", width=420)
+            with b1:
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
-            if selected_item == "2️⃣nd":
-                st.image("data/o24.png")
+            with c1:
+                st.write("")
+                
+        if selected_item == "2️⃣nd":
+            a2, b2, c2 = st.columns([0.1, 0.1, 0.1])
+            with a1:
+                st.write("")
+            with b1:
+                st.image("data/o24.png", width=420)
                 st.write(f"""
-                    📹 인물이 웹캠 화면을 이탈
-                    - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
-                    - 해당 횟수는 사용자가 지정 가능
-                    - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
-                    - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
+                     📹 인물이 웹캠 화면을 이탈
+                     - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
+                     - 해당 횟수는 사용자가 지정 가능
+                     - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
+                     - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
 
                 """)
-            if selected_item == "3️⃣rd":
+            with c1:
+                st.write("")
+                
+        if selected_item == "3️⃣rd":
+            a3, b3, c3 = st.columns([0.4, 0.3, 0.5])
+            with a1:
                 st.image("data/o5.png", width=420)
-                st.write("📹 인공지능이 인물을 다시 탐지")
-            if selected_item == "4️⃣th":
-                st.image("data/o67.png")
-                st.write("다시 화면 상에서 사라지면, 그 기준으로 다시 자리 비움 여부를 체크")
+            with b1:
+                st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
+            with c1:
+                st.write("")
+                
+        if selected_item == "4️⃣th":
+            a4, b4, c4 = st.columns([1.0, 0.1, 0.1])
+            with a1:
+                st.image("data/o67.png", width=420)
+            with b1:
+                st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
+            with c1:
+                st.write("")
+
+#         with c2:
+#             if selected_item == "1️⃣st":
+#                 st.image("data/o1.png", width=420)
+#                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
+#             if selected_item == "2️⃣nd":
+#                 st.image("data/o24.png")
+#                 st.write(f"""
+#                     📹 인물이 웹캠 화면을 이탈
+#                     - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
+#                     - 해당 횟수는 사용자가 지정 가능
+#                     - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
+#                     - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
+#                 """)
+#             if selected_item == "3️⃣rd":
+#                 st.image("data/o5.png", width=420)
+#                 st.write("📹 인공지능이 인물을 다시 탐지")
+#             if selected_item == "4️⃣th":
+#                 st.image("data/o67.png")
+#                 st.write("다시 화면 상에서 사라지면, 그 기준으로 다시 자리 비움 여부를 체크")
                 
 #             if fst:
 #                 st.image("data/o1.png", width=420)
