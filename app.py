@@ -80,11 +80,11 @@ def main() :
             fth = st.checkbox('4️⃣th')
         with c2:
             if fst:
-                st.image("data/o1.png", width=100)
+                st.image("data/o1.png", width=400)
             if snd:
                 st.image("data/o24.png")
             if trd:
-                st.image("data/o5.png", width=100)
+                st.image("data/o5.png", width=400)
             if fth:
                 st.image("data/o67.png")
     
