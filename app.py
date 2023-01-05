@@ -56,11 +56,11 @@ def main() :
         else:
             col1, col2 = st.columns(2)
             with col1:
-                st.image("data/yolov3.png")
-                st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
+                st.image("data/yolov3.png", caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
+#                 st.caption("사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
             with col2:
-                st.image("data/yolov5.png")
-                st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
+                st.image("data/yolov5.png", caption="사진2️⃣ : 4, 5를 따로 비교한 자료")
+#                 st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
 
             st.image("data/yolov7.png")
             
@@ -72,7 +72,7 @@ def main() :
             """)
 
     with tab3:
-        c1, c2 = st.columns([0.3, 1.0])
+        c1, c2 = st.columns([0.1, 1.0])
         with c1:
             fst = st.checkbox('1️⃣st')
             snd = st.checkbox('2️⃣nd')
@@ -80,29 +80,13 @@ def main() :
             fth = st.checkbox('4️⃣th')
         with c2:
             if fst:
-                st.image("data/o1.png")
+                st.image("data/o1.png", width=100)
             if snd:
                 st.image("data/o24.png")
             if trd:
-                st.image("data/o5.png")
+                st.image("data/o5.png", width=100)
             if fth:
                 st.image("data/o67.png")
-            
-#         fst = st.checkbox('1️⃣st')
-#         snd = st.checkbox('2️⃣nd')
-#         trd = st.checkbox('3️⃣rd')
-# #         fth = st.checkbox('4️⃣th')
-
-#         if fst:
-#             st.image("data/o1.png")
-#         if snd:
-#             st.image("data/o2.png")
-#             st.image("data/o3.png")
-#             st.image("data/o4.png")
-#         if trd:
-#             st.image("data/o5.png")
-#         if fth:
-#             st.image("data/o1.png")
     
     
 if __name__ == "__main__" :
