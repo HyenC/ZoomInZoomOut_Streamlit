@@ -58,19 +58,19 @@ def main() :
         else:
             st.header("What is the best YOLO?")
             st.image("data/yolo.png")
-            col1, col2 = st.columns(2)
-            with col1:
-                st.image("data/yolov3.png", width=420, caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
-            with col2:
-                st.image("data/yolov5.png", caption="사진2️⃣ : 4, 5를 따로 비교한 자료")
+#             col1, col2 = st.columns(2)
+#             with col1:
+#                 st.image("data/yolov3.png", width=420, caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
+#             with col2:
+#                 st.image("data/yolov5.png", caption="사진2️⃣ : 4, 5를 따로 비교한 자료")
             
-            e1, e2, e3 = st.columns([0.3, 1.0, 0.3])
-            with e1:
-                st.write(' ')
-            with e2:
-                st.image("data/yolov7.png", width=650)
-            with e3:
-                st.write(' ')
+#             e1, e2, e3 = st.columns([0.3, 1.0, 0.3])
+#             with e1:
+#                 st.write(' ')
+#             with e2:
+#                 st.image("data/yolov7.png", width=650)
+#             with e3:
+#                 st.write(' ')
                 
             st.subheader("📝 결론")
             st.write(f"""
