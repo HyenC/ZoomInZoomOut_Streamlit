@@ -17,9 +17,10 @@ with st.sidebar:
 img1 = Image.open('data/logo.png')
 st.image(img1)
 
+@st.cache
 def main() :
     
-    tab1, tab2 = st.tabs(["Topic", "Model"])
+    tab1, tab2, tab3 = st.tabs(["Topic", "Model", "Output"])
     with tab1:
         st.subheader("코로나19와 비대면 원격 수업")
         st.write("신종 코로나바이러스 감염증(코로나19)으로 비대면 원격 서비스 활용이 늘어나면서, <멋쟁이사자처럼 AIS> 7기 수업 역시 줌(Zoom)을 통한 온라인 수업으로 진행되고 있습니다.")
@@ -71,26 +72,26 @@ def main() :
                 - YOLOv7은 real-time object detection 분야에서 SOTA로 인정받고 있으며, 그 전 모델들보다 훨씬 더 좋은 성능과 속도를 가짐
             """)
 
-#     with tab3:
-#         st.write("This is inside the container")
+    with tab3:
+        st.write("This is inside the container")
         
 #         col1, col2, col3, col4 = st.columns(4)
 #             with col1:
-#                 st.image("data/o1.png")
+                st.image("data/o1.png")
 #             with col2:
-#                 st.image("data/o2.png")
+                st.image("data/o2.png")
 #             with col3:
-#                 st.image("data/o3.png")
+                st.image("data/o3.png")
 #             with col4:
-#                 st.image("data/o4.png")
+                st.image("data/o4.png")
         
 #         col5, col6, col7 = st.columns(3)
 #             with col5:
-#                 st.image("data/o5.png")
+                st.image("data/o5.png")
 #             with col6:
-#                 st.image("data/o6.png")
+                st.image("data/o6.png")
 #             with col7:
-#                 st.image("data/o7.png")
+                st.image("data/o7.png")
     
     
 if __name__ == "__main__" :
