@@ -86,14 +86,20 @@ def main() :
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
                 
         if selected_item == "2️⃣nd":
-            st.image("data/o24.png", width=420)
-            st.write(f"""
-                📹 인물이 웹캠 화면을 이탈
-                - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
-                - 해당 횟수는 사용자가 지정 가능
-                - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
-                - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
-            """)
+            a2, b2, c2 = st.columns([0.1, 0.1, 0.1])
+            with a2:
+                st.write("")
+            with b2:
+                st.image("data/o24.png", width=420)
+                st.write(f"""
+                    📹 인물이 웹캠 화면을 이탈
+                    - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
+                    - 해당 횟수는 사용자가 지정 가능
+                    - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
+                    - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
+                """)
+            with c2:
+                st.write("")
                 
         if selected_item == "3️⃣rd":
             a3, b3 = st.columns(2)
@@ -104,11 +110,11 @@ def main() :
                 
         if selected_item == "4️⃣th":
             a4, b4, c4 = st.columns([0.1, 0.1, 0.1])
-            with a1:
+            with a4:
                 st.write("")
-            with b1:
+            with b4:
                 st.image("data/o67.png", width=420)
-            with c1:
+            with c4:
                 st.write("")
 
 #         with c2:
