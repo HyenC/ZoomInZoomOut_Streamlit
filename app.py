@@ -57,7 +57,7 @@ def main() :
             st.header("What is the best YOLO?")
             col1, col2 = st.columns(2)
             with col1:
-                st.image("data/yolov3.png", caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
+                st.image("data/yolov3.png", width=420, caption="사진1️⃣ : YOLOv3, 4, 5를 비교(4와 5 버전의 우위가 정확하지 않음)")
             with col2:
                 st.image("data/yolov5.png", caption="사진2️⃣ : 4, 5를 따로 비교한 자료")
             
@@ -83,6 +83,9 @@ def main() :
             with a1:
                 st.image("data/o1.png", width=420)
             with b1:
+                st.write("")
+                st.write("")
+                st.write("")
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
                 
         if selected_item == "2️⃣nd":
@@ -100,6 +103,9 @@ def main() :
             with a3:
                 st.image("data/o5.png", width=420)
             with b3:
+                st.write("")
+                st.write("")
+                st.write("")
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
                 
         if selected_item == "4️⃣th":
