@@ -81,13 +81,9 @@ def main() :
         if fst:
             st.image("data/o1.png")
         if snd:
-            col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.image("data/o2.png")
-                with col2:
-                    st.image("data/o3.png")
-                with col3:
-                    st.image("data/o4.png")
+            st.image("data/o2.png")
+            st.image("data/o3.png")
+            st.image("data/o4.png")
         if trd:
             st.image("data/o5.png")
         if fth:
