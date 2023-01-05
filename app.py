@@ -66,7 +66,7 @@ def main() :
             with e1:
                 st.write(' ')
             with e2:
-                st.image("data/yolov7.png", width=550)
+                st.image("data/yolov7.png", width=650)
             with e3:
                 st.write(' ')
                 
