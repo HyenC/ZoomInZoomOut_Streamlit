@@ -82,11 +82,11 @@ def main() :
             if fst:
                 st.image("data/o1.png")
             if snd:
-                st.image("data/o25.png")
+                st.image("data/o24.png")
             if trd:
-                st.image("data/o3.png")
+                st.image("data/o5.png")
             if fth:
-                st.image("data/o45.png")
+                st.image("data/o67.png")
             
 #         fst = st.checkbox('1️⃣st')
 #         snd = st.checkbox('2️⃣nd')
