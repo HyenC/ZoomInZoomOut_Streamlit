@@ -17,7 +17,6 @@ with st.sidebar:
 img1 = Image.open('data/logo.png')
 st.image(img1)
 
-@st.cache
 def main() :
     
     tab1, tab2, tab3 = st.tabs(["Topic", "Model", "Output"])
