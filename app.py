@@ -61,9 +61,15 @@ def main() :
             with col2:
                 st.image("data/yolov5.png", caption="사진2️⃣ : 4, 5를 따로 비교한 자료")
 #                 st.caption("사진2️⃣ : 4, 5를 따로 비교한 자료")
-
-            st.image("data/yolov7.png")
             
+            e1, e2, e3 = st.columns([0.3, 1.0, 0.3])
+            with e1:
+                st.write(' ')
+            with e2:
+                st.image("data/yolov7.png", width=550)
+            with e3:
+                st.write(' ')
+                
             st.subheader("📝 결론")
             st.write(f"""
                 - YOLOv4는 v5에 비해 느리게 동작하지만 FPS성능의 최적화 가능
@@ -74,15 +80,16 @@ def main() :
     with tab3:
         c1, c2 = st.columns([0.1, 1.0])
         with c1:
-            fst = st.checkbox('1️⃣st')
-            snd = st.checkbox('2️⃣nd')
-            trd = st.checkbox('3️⃣rd')
-            fth = st.checkbox('4️⃣th')
+            selected_item = st.radio("", ("1️⃣st", "2️⃣nd", "3️⃣rd", "4️⃣th"))
+#             fst = st.checkbox('1️⃣st')
+#             snd = st.checkbox('2️⃣nd')
+#             trd = st.checkbox('3️⃣rd')
+#             fth = st.checkbox('4️⃣th')
         with c2:
-            if fst:
+            if selected_item == "1️⃣st":
                 st.image("data/o1.png", width=420)
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
-            if snd:
+            if selected_item == "2️⃣nd":
                 st.image("data/o24.png")
                 st.write(f"""
                     📹 인물이 웹캠 화면을 이탈
@@ -92,12 +99,32 @@ def main() :
                     - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
 
                 """)
-            if trd:
+            if selected_item == "3️⃣rd":
                 st.image("data/o5.png", width=420)
                 st.write("📹 인공지능이 인물을 다시 탐지")
-            if fth:
+            if selected_item == "4️⃣th":
                 st.image("data/o67.png")
                 st.write("다시 화면 상에서 사라지면, 그 기준으로 다시 자리 비움 여부를 체크")
+                
+#             if fst:
+#                 st.image("data/o1.png", width=420)
+#                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
+#             if snd:
+#                 st.image("data/o24.png")
+#                 st.write(f"""
+#                     📹 인물이 웹캠 화면을 이탈
+#                     - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
+#                     - 해당 횟수는 사용자가 지정 가능
+#                     - 자리를 비웠을 때, 루프문이 돌면서 존재 여부를 탐색
+#                     - 인물이 인식되지 않을 경우 계속해서 자리 비움 로그 생성
+
+#                 """)
+#             if trd:
+#                 st.image("data/o5.png", width=420)
+#                 st.write("📹 인공지능이 인물을 다시 탐지")
+#             if fth:
+#                 st.image("data/o67.png")
+#                 st.write("다시 화면 상에서 사라지면, 그 기준으로 다시 자리 비움 여부를 체크")
     
     
 if __name__ == "__main__" :
