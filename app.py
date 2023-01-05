@@ -103,13 +103,9 @@ def main() :
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
                 
         if selected_item == "4️⃣th":
-            a4, b4, c4 = st.columns([0.1, 0.1, 0.1])
-            with a4:
-                st.write("")
-            with b4:
-                st.image("data/o67.png")
-            with c4:
-                st.write("")
+            st.image("data/o67.png", width=1000)
+            st.write("📹 다시 화면 상에서 사라지면, 그 기준으로 다시 자리 비움 여부를 체크")
+
 
 #         with c2:
 #             if selected_item == "1️⃣st":
