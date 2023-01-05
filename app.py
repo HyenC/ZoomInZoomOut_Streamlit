@@ -86,11 +86,10 @@ def main() :
                 st.write("📹 웹캠이 실행되고, 인물 탐지를 시작")
                 
         if selected_item == "2️⃣nd":
-            a2, b2, c2 = st.columns([0.1, 0.1, 0.1])
             with a2:
                 st.write("")
             with b2:
-                st.image("data/o24.png", width=420)
+                st.image("data/o24.png")
                 st.write(f"""
                     📹 인물이 웹캠 화면을 이탈
                     - while 문을 일정 횟수 동안 반복했을 때, 지속해서 자리에 없다면 ‘자리 비움’ 로그를 생성
@@ -113,7 +112,7 @@ def main() :
             with a4:
                 st.write("")
             with b4:
-                st.image("data/o67.png", width=420)
+                st.image("data/o67.png")
             with c4:
                 st.write("")
 
